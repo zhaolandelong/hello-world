@@ -13,3 +13,41 @@ label{display: block;}
 :-ms-input-placeholder{/* Internet Explorer 10+ */ color: #e0e0e0;font-size: 1em;line-height:normal;}
 .nocopy {-moz-user-select: none;-webkit-user-select: none;}
 /*end CSS reset*/
+/*pc css reset start*/
+@charset "utf-8";
+body, div, span, iframe, img, a, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, label, input, button, textarea, select, option, p, table, tr, th, td, em, :before, :after {
+    font-family: 'Microsoft Yahei';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 14px;
+    background-color: #fafafa;
+}
+ol, ul {
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+input, textarea {
+    resize: none;
+    outline: none;
+}
+a, a:link, a:visited, a:hover, a:active {
+    cursor: pointer;
+    text-decoration: none;
+}
+.wrap {
+    width: 1006px;
+    margin: 0 auto;
+}
+/*pc css reset end*/
