@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>圣杯-双飞翼布局</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .grail-container{
+        min-width: 350px;
+        padding: 0 220px 0 230px;
+        background-color: #ccc;
+      }
+      .grail-container:after{
+        content:"";
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+      }
+      .grail-common{
+        float: left;
+        position: relative;
+      }
+      .grail-main{
+        width: 100%;
+        height: 80px;
+        background-color: #f00;
+      }
+      .grail-left{
+        width: 230px;
+        height: 70px;
+        margin-left: -100%;
+        left:-230px;
+        background-color: #0f0;
+      }
+      .grail-right{
+        width: 220px;
+        height: 60px;
+        margin-left: -220px;
+        right: -220px;
+        background-color: #00f;
+      }
+      .wing-container{
+        min-width: 800px;
+      }
+      .wing-container:after{
+        content:"";
+        display:block;
+        height:0;
+        clear:both;
+        visibility:hidden;
+      }
+      .wing-main{
+        float: left;
+        width: 100%;
+        background-color: #f00;
+        height: 80px;
+        /*min-width: 500px;*/
+      }
+      .wing-submain{
+        margin: 0 220px 0 230px;
+        background-color: #ff0;
+        height: 50px;
+      }
+      .wing-left{
+        float: left;
+        width: 230px;
+        margin-left: -100%;
+        background-color: #0f0;
+        height: 70px;
+      }
+      .wing-right{
+        float: left;
+        width: 220px;
+        margin-left: -220px;
+        background-color: #00f;
+        height: 60px;
+      }
+      .diy-container{
+        min-width: 800px;
+      }
+      .diy-left{
+        float: left;
+        width: 230px;
+        background-color: #0f0;
+        height: 70px;
+      }
+      .diy-main{
+        box-sizing: border-box;
+        padding: 0 220px 0 230px;
+        background-color: #ff0;
+        height: 50px;
+      }
+      .diy-right{
+        float: right;
+        width: 220px;
+        background-color: #00f;
+        height: 60px;
+      }
+    </style>
+</head>
+<body>
+  <div class="grail-container">
+    <div class="grail-main grail-common">
+    </div>
+    <div class="grail-left grail-common">
+    </div>
+    <div class="grail-right grail-common">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="wing-container">
+    <div class="wing-main">
+      <div class="wing-submain"></div>
+    </div>
+    <div class="wing-left">
+    </div>
+    <div class="wing-right">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="diy-container">
+    <div class="diy-left"></div>
+    <div class="diy-main"></div>
+    <div class="diy-right"></div>
+  </div>
+</body>
+</html>
