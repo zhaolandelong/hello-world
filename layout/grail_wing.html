@@ -1,136 +1,213 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>圣杯-双飞翼布局</title>
     <style>
-      *{
+    * {
         margin: 0;
         padding: 0;
-      }
-      .grail-container{
-        min-width: 350px;
+    }
+    
+    body {
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    .container {
+        color: #fff;
+        background-color: #999;
+        box-sizing: border-box;
+        min-width: 800px;
+    }
+    
+    .container:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    
+    .main {
+        background-color: #f00;
+    }
+    
+    .left {
+        background-color: #f0f;
+    }
+    
+    .right {
+        background-color: #00f;
+    }
+    </style>
+    <style>
+    .grail-container {
         padding: 0 220px 0 230px;
-        background-color: #ccc;
-      }
-      .grail-container:after{
-        content:"";
-        display:block;
-        height:0;
-        clear:both;
-        visibility:hidden;
-      }
-      .grail-common{
+    }
+    
+    .grail-main {
+        float: left;
+        width: 100%;
+    }
+    
+    .grail-left {
         float: left;
         position: relative;
-      }
-      .grail-main{
-        width: 100%;
-        height: 80px;
-        background-color: #f00;
-      }
-      .grail-left{
         width: 230px;
-        height: 70px;
         margin-left: -100%;
-        left:-230px;
-        background-color: #0f0;
-      }
-      .grail-right{
+        left: -230px;
+    }
+    
+    .grail-right {
+        float: left;
+        position: relative;
         width: 220px;
-        height: 60px;
         margin-left: -220px;
         right: -220px;
-        background-color: #00f;
-      }
-      .wing-container{
-        min-width: 800px;
-      }
-      .wing-container:after{
-        content:"";
-        display:block;
-        height:0;
-        clear:both;
-        visibility:hidden;
-      }
-      .wing-main{
+    }
+    </style>
+    <style>
+    .wing-container {}
+    
+    .wing-main {
         float: left;
         width: 100%;
-        background-color: #f00;
-        height: 80px;
-        /*min-width: 500px;*/
-      }
-      .wing-submain{
+    }
+    
+    .wing-submain {
         margin: 0 220px 0 230px;
-        background-color: #ff0;
-        height: 50px;
-      }
-      .wing-left{
+        background-color: #0f0;
+    }
+    
+    .wing-left {
         float: left;
         width: 230px;
         margin-left: -100%;
-        background-color: #0f0;
-        height: 70px;
-      }
-      .wing-right{
+    }
+    
+    .wing-right {
         float: left;
         width: 220px;
         margin-left: -220px;
-        background-color: #00f;
-        height: 60px;
-      }
-      .diy-container{
-        min-width: 800px;
-      }
-      .diy-left{
+    }
+    </style>
+    <style>
+    .diy-container {}
+    
+    .diy-left {
         float: left;
         width: 230px;
-        background-color: #0f0;
-        height: 70px;
-      }
-      .diy-main{
+    }
+    
+    .diy-main {
         box-sizing: border-box;
         padding: 0 220px 0 230px;
-        background-color: #ff0;
-        height: 50px;
-      }
-      .diy-right{
-        float: right;
-        width: 220px;
-        background-color: #00f;
-        height: 60px;
-      }
+    }
     </style>
 </head>
+
 <body>
-  <div class="grail-container">
-    <div class="grail-main grail-common">
+    <h1>圣杯布局</h1>
+    <div class="grail-container container">
+        <pre>
+  .grail-container {padding: 0 220px 0 230px;}
+  .grail-container:after { content: "";display: block;height: 0;clear: both;visibility: hidden;}
+        </pre>
+        <div class="grail-main main">
+            <pre>
+  .grail-main {
+      float: left;
+      width: 100%;
+  }
+        </pre>
+        </div>
+        <div class="grail-left left">
+            <pre>
+  .grail-left {
+      float: left;
+      position: relative;
+      width: 230px;
+      margin-left: -100%;
+      left: -230px;
+  }
+        </pre>
+        </div>
+        <div class="grail-right right">
+            <pre>
+  .grail-right {
+      float: left;
+      position: relative;
+      width: 220px;
+      margin-left: -220px;
+      right: -220px;
+  }
+        </pre>
+        </div>
     </div>
-    <div class="grail-left grail-common">
+    <h1>双飞翼布局</h1>
+    <div class="wing-container container">
+        <pre>.wing-container {}</pre>
+        <div class="wing-main main">
+            <pre style="margin-left: 230px;">
+  .wing-main {
+      float: left;
+      width: 100%;
+  }
+        </pre>
+            <div class="wing-submain">
+                <pre>
+  .wing-submain { margin: 0 220px 0 230px;}
+              </pre>
+            </div>
+        </div>
+        <div class="wing-left left">
+            <pre>
+  .wing-left {
+      float: left;
+      width: 230px;
+      margin-left: -100%;
+  }
+        </pre>
+        </div>
+        <div class="wing-right right">
+            <pre>
+  .wing-right {
+      float: left;
+      width: 220px;
+      margin-left: -220px;
+  }
+        </pre>
+        </div>
     </div>
-    <div class="grail-right grail-common">
+    <h1>简易布局</h1>
+    <div class="diy-container container">
+        <pre>.diy-container {}</pre>
+        <div class="diy-left left">
+            <pre>
+  .diy-left {
+      float: left;
+      width: 230px;
+  }
+          </pre>
+        </div>
+        <div class="diy-main main">
+            <pre>
+  .diy-main {
+      box-sizing: border-box;
+      padding-left: 230px;
+  }
+
+          </pre>
+        </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="wing-container">
-    <div class="wing-main">
-      <div class="wing-submain"></div>
-    </div>
-    <div class="wing-left">
-    </div>
-    <div class="wing-right">
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="diy-container">
-    <div class="diy-left"></div>
-    <div class="diy-main"></div>
-    <div class="diy-right"></div>
-  </div>
+    <script>
+    document.onclick = function(e) {
+        console.log(e.target)
+    }
+    </script>
 </body>
+
 </html>
