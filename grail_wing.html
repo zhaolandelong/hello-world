@@ -110,11 +110,16 @@
 </head>
 
 <body>
-    <h1>圣杯布局</h1>
+    <h4>包裹定宽清除浮动</h4>
+    <div class="container">
+    <pre>
+      .container { box-sizing: border-box; min-width: 800px;}
+      .container:after { content: "";display: block;height: 0;clear: both;visibility: hidden;}</pre>
+    </div>
+    <h4>圣杯布局</h4>
     <div class="grail-container container">
         <pre>
   .grail-container {padding: 0 220px 0 230px;}
-  .grail-container:after { content: "";display: block;height: 0;clear: both;visibility: hidden;}
         </pre>
         <div class="grail-main main">
             <pre>
@@ -147,7 +152,7 @@
         </pre>
         </div>
     </div>
-    <h1>双飞翼布局</h1>
+    <h4>双飞翼布局</h4>
     <div class="wing-container container">
         <pre>.wing-container {}</pre>
         <div class="wing-main main">
@@ -182,7 +187,7 @@
         </pre>
         </div>
     </div>
-    <h1>简易布局</h1>
+    <h4>简易布局</h4>
     <div class="diy-container container">
         <pre>.diy-container {}</pre>
         <div class="diy-left left">
