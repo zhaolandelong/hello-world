@@ -103,7 +103,11 @@
     }
     
     .diy-main {
-        margin-left: 230px;
+        margin: 0 220px 0 230px;
+    }
+    .diy-right {
+        float: right;
+        width: 220px;
     }
     </style>
 </head>
@@ -118,10 +122,12 @@
     <h4>圣杯布局</h4>
     <div class="grail-container container">
         <pre>
+  index : 1
   .grail-container {padding: 0 220px 0 230px;}
         </pre>
         <div class="grail-main main">
             <pre>
+  index : 1 - 1
   .grail-main {
       float: left;
       width: 100%;
@@ -130,6 +136,7 @@
         </div>
         <div class="grail-left left">
             <pre>
+  index : 1 - 2
   .grail-left {
       float: left;
       position: relative;
@@ -141,6 +148,7 @@
         </div>
         <div class="grail-right right">
             <pre>
+  index : 1 - 3
   .grail-right {
       float: left;
       position: relative;
@@ -153,9 +161,10 @@
     </div>
     <h4>双飞翼布局</h4>
     <div class="wing-container container">
-        <pre>.wing-container {}</pre>
+        <pre>index : 1 .wing-container {}</pre>
         <div class="wing-main main">
             <pre style="margin-left: 230px;">
+  index : 1 - 1
   .wing-main {
       float: left;
       width: 100%;
@@ -163,12 +172,14 @@
         </pre>
             <div class="wing-submain">
                 <pre>
+  index : 1 - 1 - 1
   .wing-submain { margin: 0 220px 0 230px;}
               </pre>
             </div>
         </div>
         <div class="wing-left left">
             <pre>
+  index : 1 - 2
   .wing-left {
       float: left;
       width: 230px;
@@ -178,6 +189,7 @@
         </div>
         <div class="wing-right right">
             <pre>
+  index : 1 - 3
   .wing-right {
       float: left;
       width: 220px;
@@ -188,20 +200,31 @@
     </div>
     <h4>简易布局</h4>
     <div class="diy-container container">
-        <pre>.diy-container {}</pre>
+        <pre>index : 1 .diy-container {}</pre>
         <div class="diy-left left">
             <pre>
+  index : 1 - 1
   .diy-left {
       float: left;
       width: 230px;
   }
           </pre>
         </div>
+        <div class="diy-right right">
+            <pre>
+  index : 1 - 2
+  .diy-right {
+      float: right;
+      width: 220px;
+  }
+          </pre>
+        </div>
         <div class="diy-main main">
             <pre>
+  index : 1 - 3
   .diy-main {
 
-      margin-left: 230px;
+      margin: 0 220px 0 230px;
 
   }
           </pre>
